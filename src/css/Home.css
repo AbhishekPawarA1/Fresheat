@@ -1,0 +1,74 @@
+.banner-dev {
+    width: 100%;
+    height: 900px; 
+    box-sizing: border-box;
+    background-image: url("../images/Home_page_banner.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 50px;
+}
+
+@keyframes smoothSlideInOut {
+    0% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+    15% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    85% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+}
+
+.banner-dev h2,
+.banner-dev h1,
+.order-now-button {
+    opacity: 0; 
+    animation: smoothSlideInOut 6s ease-in-out infinite;
+}
+
+.banner-dev h2 {
+    font-family: "Arial Black", Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    color: rgb(255, 136, 0);
+    font-size: 25px;
+    font-weight: 800;
+    animation-delay: 0.3s; 
+}
+
+.banner-dev h1 {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 120px;
+    color: white;
+    font-weight: 1000;
+    margin-top: -5px;
+    animation-delay: 0.5s; 
+}
+
+.order-now-button {
+    padding: 20px;
+    font-size: larger;
+    background-color: #e30429;
+    color: white;
+    width: 220px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    animation-delay: 0.7s; 
+}
+
+.order-now-button:hover {
+    background-color: #c10323;
+}
