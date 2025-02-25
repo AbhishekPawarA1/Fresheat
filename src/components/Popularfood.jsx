@@ -121,6 +121,43 @@ export function Popularfood() {
             <p>The Registration Fees</p>
             <h2>$ 26.99</h2>
           </div>
+          {/* Duplicate items for smooth infinite scrolling */}
+          <div className="food-sep-dev">
+            <img
+              src="https://gramentheme.com/html/fresheat/assets/img/food-items/item1_3.png"
+              alt="Chicken fried Rice"
+            />
+            <h1>Chicken fried Rice</h1>
+            <p>The Registration Fees</p>
+            <h2>$ 100.99</h2>
+          </div>
+          <div className="food-sep-dev">
+            <img
+              src="https://gramentheme.com/html/fresheat/assets/img/food-items/item1_2.png"
+              alt="Egg and Cucumber"
+            />
+            <h1>Egg and Cucumber</h1>
+            <p>The Registration Fees</p>
+            <h2>$ 28.00</h2>
+          </div>
+          <div className="food-sep-dev">
+            <img
+              src="https://gramentheme.com/html/fresheat/assets/img/food-items/item1_4.png"
+              alt="Chicken Leg Piece"
+            />
+            <h1>Chicken Leg Piece</h1>
+            <p>The Registration Fees</p>
+            <h2>$ 20.99</h2>
+          </div>
+          <div className="food-sep-dev">
+            <img
+              src="https://gramentheme.com/html/fresheat/assets/img/food-items/item1_1.png"
+              alt="Chicken Pizza"
+            />
+            <h1>Chicken Pizza</h1>
+            <p>The Registration Fees</p>
+            <h2>$ 26.99</h2>
+          </div>
         </div>
       </div>
       <div className="food-main-dev">

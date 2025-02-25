@@ -5,15 +5,19 @@ import './App.css'
 import { NavBar } from './components/NavBar'
 import { Home } from './components/Home'
 import { Popularfood } from './components/Popularfood'
+import { AboutUs } from './components/AboutUs'
+import { PopularDishes } from './components/PopularDishes'
+import { SpecialFood } from './components/SpecialFood'
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
       <NavBar />
       <Home />
-      <Popularfood/>
+      <Popularfood />
+      <AboutUs />
+      <PopularDishes />
+      <SpecialFood/>
     </>
   )
 }

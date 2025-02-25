@@ -1,0 +1,68 @@
+.special-offer-main-div {
+    width: 100%;
+    height: 900px; 
+    box-sizing: border-box;
+    background-image: url("../images/food/pizza_background.jpg");
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat; 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 100px
+}
+.special-first-div>h2 {
+    color: rgb(255, 0, 0);
+    margin-left: 50px;
+    font-size: 30px;
+}
+.special-first-div>h1 {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    font-size: 70px;
+    font-weight:bolder ;
+}
+.special-first-div>h3 {
+    color: rgb(255, 255, 255);
+    margin-left: 50px;
+    font-size: 40px;
+    font-weight:bolder ;
+}
+.special-first-div>button {
+    padding: 20px;
+    font-size: larger;
+    background-color: #e30429;
+    color: white;
+    width: 220px;
+    border: none;
+    cursor: pointer;
+    margin-left: 50px;
+    transition: background-color 0.3s ease;
+    animation-delay: 0.5s; 
+}
+
+.special-first-div>button:hover {
+    background-color: #c10323;
+}
+
+.banner-container {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px; 
+}
+
+.animated-banner {
+  animation: moveBanner 1s ease-in-out infinite alternate;
+  max-width: 100%;
+}
+
+@keyframes moveBanner {
+  0% {
+    transform: translateX(-12px);
+  }
+  100% {
+    transform: translateX(12px);
+  }
+}

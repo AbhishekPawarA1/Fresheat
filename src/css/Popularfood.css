@@ -60,7 +60,6 @@
     font-weight: bolder;
     color: white;
     margin-left: 20px;
-
     width: 100px;
 }
 
@@ -68,7 +67,7 @@
 .popularfood-dev > h2 {
     color: #ff6600;
     font-family: "Arial Black", Arial, sans-serif;
-    font-size: 23px;
+    font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 1px;
     font-weight: bold;
@@ -96,7 +95,7 @@
 .heading-animation {
   opacity: 0;
   transform: translateY(50px);
-  transition: transform 2s ease-out, opacity 0.6s ease-out;
+  transition: transform 1s ease-out, opacity 0.6s ease-out;
 }
 
 .animated {
@@ -117,8 +116,8 @@
 .food-slider {
     display: flex;
     width: max-content;
-    gap: 20px;
-    animation: scrollInfinite 12s linear infinite;
+    gap: 30px;
+    animation: scrollInfinite 15s linear infinite;
 }
 
 .food-sep-dev {

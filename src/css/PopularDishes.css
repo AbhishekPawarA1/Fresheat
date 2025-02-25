@@ -1,0 +1,138 @@
+/* Main Container */
+.dishes-main-dev {
+    margin-top: 80px;
+    text-align: center;
+    overflow: hidden;
+    padding: 20px;
+    border-radius: 20px;
+    background-color: #f4f1ea;
+    margin-top: 0%;
+}
+
+/* Heading Animation */
+.heading-animation {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: transform 1s ease-out, opacity 0.6s ease-out;
+}
+
+.animated {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Headings Styling */
+.dishes-main-dev > h2 {
+    color: #ff6600;
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 27px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: bold;
+    margin-top: 100px;
+}
+
+.dishes-main-dev > h1 {
+    font-family: "Arial Black", Arial, sans-serif;
+    font-size: 48px;
+    font-weight: bolder;
+    color: #000000;
+}
+
+/* Grid Layout */
+.dishes-main-grid {
+    width: 90%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+    margin: auto;
+}
+
+/* Card Container */
+.dishes-sep-dev {
+    position: relative;
+    padding: 20px;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    overflow: hidden;
+}
+
+/* Background Image on Hover */
+.dishes-sep-dev::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url("https://gramentheme.com/html/fresheat/assets/img/bg/dishesThumbBG.png") center/cover no-repeat;
+    opacity: 0;
+    transition: opacity 0.4s ease-in-out;
+    z-index: 0;
+}
+
+/* Animated Glow Effect */
+.dishes-sep-dev::after {
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255, 165, 0, 0.3) 20%, transparent 70%);
+    opacity: 0;
+    transform: rotate(0deg);
+    transition: opacity 0.4s ease, transform 0.5s ease-in-out;
+}
+
+/* Card hover effect */
+.dishes-sep-dev:hover {
+    transform: translateY(-8px);
+    box-shadow: rgba(0, 0, 0, 0.5) 0px 12px 24px;
+    cursor: pointer;
+}
+
+/* Activate Background Image & Glow Effect on Hover */
+.dishes-sep-dev:hover::before {
+    opacity: 1;
+}
+
+.dishes-sep-dev:hover::after {
+    opacity: 0.3;
+    transform: rotate(180deg);
+}
+
+/* Image Styling */
+.dishes-sep-dev > img {
+    width: 250px;
+    display: block;
+    margin: auto;
+    position: relative;
+    z-index: 1;
+    transition: transform 0.4s ease-in-out; /* Smooth Scaling */
+}
+
+/* Smooth Image Scale on Hover */
+.dishes-sep-dev:hover > img {
+    transform: scale(1.1);
+}
+
+/* Text Inside Cards */
+.dishes-sep-dev h1, 
+.dishes-sep-dev p, 
+.dishes-sep-dev h2 {
+    text-align: center;
+    position: relative;
+    z-index: 2; /* Ensures text is above hover effects */
+    color: #000; /* Default text color */
+    transition: color 0.3s ease-in-out;
+}
+
+/* Change Text Color on Hover */
+.dishes-sep-dev:hover h1, 
+.dishes-sep-dev:hover p, 
+.dishes-sep-dev:hover h2 {
+    color: #fff; /* Change text color to white */
+}
